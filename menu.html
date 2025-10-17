@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Laxmi Restaurant</title>
+  <style>
+    /* ==== General Styles ==== */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #fffaf3; /* Off-white background */
+      color: #222;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #c92a2a;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      background-color: #fff5f5;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #c92a2a;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #a61e1e;
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #c92a2a;
+      border-bottom: 2px solid #c92a2a;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 30px;
+    }
+
+    .menu-category {
+      margin-bottom: 50px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #ddd;
+      padding: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    .menu-item:hover {
+      background-color: #fff5f5;
+      transition: 0.3s;
+    }
+
+    footer {
+      background-color: #c92a2a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* Decorative heading text */
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 2.5rem;
+    }
+
+    /* Small responsive tweak */
+    @media (max-width: 600px) {
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo">Raj Laxmi Restaurant</span>
+  </header>
+
+  <nav>
+    <a href="#burgers">Burgers & Sandwiches</a>
+    <a href="#pizza">Pizza & Pasta</a>
+    <a href="#chat">Chatori Gali</a>
+  </nav>
+
+  <section id="burgers" class="menu-category">
+    <h2>Burgers & Sandwiches</h2>
+    <div class="menu-item"><span>Veg Burger</span><span>₹70</span></div>
+    <div class="menu-item"><span>Veg Cheese Burger</span><span>₹85</span></div>
+    <div class="menu-item"><span>Paneer Tikka Burger</span><span>₹100</span></div>
+    <div class="menu-item"><span>Paneer Chilly Burger</span><span>₹100</span></div>
+    <div class="menu-item"><span>French Fries</span><span>₹80</span></div>
+    <br/>
+    <div class="menu-item"><span>Veg Sandwich</span><span>₹35</span></div>
+    <div class="menu-item"><span>Cheese Sandwich</span><span>₹90</span></div>
+    <div class="menu-item"><span>Veg Cheese Club Sandwich</span><span>₹100</span></div>
+    <div class="menu-item"><span>Cheese Corn Sandwich</span><span>₹90</span></div>
+    <div class="menu-item"><span>Cheese Paneer Sandwich</span><span>₹100</span></div>
+    <div class="menu-item"><span>Veg Grilled Sandwich</span><span>₹80</span></div>
+  </section>
+
+  <section id="pizza" class="menu-category">
+    <h2>Pizza & Pasta</h2>
+    <div class="menu-item"><span>Pizza Margherita</span><span>₹170</span></div>
+    <div class="menu-item"><span>Pizza Green House</span><span>₹180</span></div>
+    <div class="menu-item"><span>Pizza Paneer Tikka</span><span>₹200</span></div>
+    <div class="menu-item"><span>Pizza French Fries</span><span>₹190</span></div>
+    <div class="menu-item"><span>Pizza Chilly Cheese Veg</span><span>₹210</span></div>
+    <div class="menu-item"><span>Pizza Raj Laxmi Special</span><span>₹210</span></div>
+    <div class="menu-item"><span>Pizza Raj Laxmi Cosmo</span><span>₹240</span></div>
+    <div class="menu-item"><span>Pizza Paneer Tikka n Corn</span><span>₹220</span></div>
+    <br/>
+    <div class="menu-item"><span>Alfredo Pasta (White Sauce)</span><span>₹220</span></div>
+    <div class="menu-item"><span>Arrabbiata Pasta (Red Sauce)</span><span>₹220</span></div>
+    <div class="menu-item"><span>Pink Sauce Pasta</span><span>₹250</span></div>
+    <div class="menu-item"><span>Mix Cheese Sauce Pasta</span><span>₹250</span></div>
+  </section>
+
+  <section id="chat" class="menu-category">
+    <h2>Chatori Gali</h2>
+    <div class="menu-item"><span>Alloo Tikki</span><span>Half ₹45 | Full ₹70</span></div>
+    <div class="menu-item"><span>Mutter Chat</span><span>Half ₹45 | Full ₹70</span></div>
+    <div class="menu-item"><span>Dahi Batashe</span><span>₹50</span></div>
+    <div class="menu-item"><span>Dahi Bhalla Raj Laxmi Special</span><span>Half ₹45 | Full ₹70</span></div>
+    <div class="menu-item"><span>Dahi Bhalla Papri Chat</span><span>₹70</span></div>
+    <div class="menu-item"><span>Raj Kachori</span><span>₹130</span></div>
+    <div class="menu-item"><span>Basket Chat</span><span>₹150</span></div>
+    <div class="menu-item"><span>Sev Puri</span><span>₹70</span></div>
+    <br/>
+    <div class="menu-item"><span>Cheese Pao Bhaji</span><span>₹140</span></div>
+    <div class="menu-item"><span>Chole Bhature</span><span>₹135</span></div>
+    <div class="menu-item"><span>Pav Bhaji</span><span>₹135</span></div>
+    <div class="menu-item"><span>Pani Batasa (5 pcs)</span><span>₹20</span></div>
+    <div class="menu-item"><span>Suji Pani Batasa (5 pcs)</span><span>₹25</span></div>
+    <div class="menu-item"><span>Suji Dahi Batasa (5 pcs)</span><span>₹50</span></div>
+    <div class="menu-item"><span>Papadi Chat</span><span>₹50</span></div>
+  </section>
+
+  <footer>
+    © 2025 Raj Laxmi Restaurant | All Rights Reserved 🍴
+  </footer>
+
+  <script>
+    // Smooth scrolling effect for navbar links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+
+</body>
+</html>
